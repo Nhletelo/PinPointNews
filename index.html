@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PinPoint News - Stay Informed, Stay Local</title>
+
+    <!-- Firebase SDKs -->
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyAA3s3L30ew8WbSPHY8fMerVFplnvu_SMk",
+        authDomain: "pinpointnews-97de3.firebaseapp.com",
+        projectId: "pinpointnews-97de3",
+        storageBucket: "pinpointnews-97de3.firebasestorage.app",
+        messagingSenderId: "102846736759",
+        appId: "1:102846736759:web:98a6855db4610d93d1d972",
+        measurementId: "G-4J8SM1GJH2"
+      };
+
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+
+    <style>
+        :root {
+            --primary-color: #6200EE;
+            --text-color: #333;
+            --bg-color: #f4f7f6;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 24px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            margin-bottom: 1rem;
+            background: white;
+        }
+        h1 { margin: 0; font-size: 2.5rem; }
+        .tagline { font-size: 1.2rem; opacity: 0.9; margin-bottom: 2rem; }
+        .btn {
+            display: inline-block;
+            background: white;
+            color: var(--primary-color);
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+        .btn:hover { transform: scale(1.05); }
+        section { padding: 3rem 0; }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            border-top: 1px solid #ddd;
+        }
+        footer a { color: var(--primary-color); text-decoration: none; margin: 0 10px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="PinPoint News Logo" class="app-icon" onerror="this.src='https://via.placeholder.com/120?text=News'">
+        <h1>PinPoint News</h1>
+        <p class="tagline">Accurate and up-to-date news tailored to your location.</p>
+        <a href="#" class="btn">Coming Soon to Google Play</a>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Stay Informed</h2>
+            <p>PinPoint News delivers breaking news from around the world directly to your fingertips. Whether it's technology, sports, or local updates, we've got you covered.</p>
+        </section>
+
+        <section>
+            <h2>Key Features</h2>
+            <ul>
+                <li><strong>Local Focus:</strong> News relevant to your specific region.</li>
+                <li><strong>Category Search:</strong> Browse topics that matter to you.</li>
+                <li><strong>Premium Experience:</strong> Watch an ad to unlock deep-dive articles.</li>
+                <li><strong>Privacy First:</strong> We secure your data with industry-leading encryption.</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 PinPoint News. All rights reserved.</p>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="app-ads.txt">App-ads.txt</a>
+    </footer>
+
+</body>
+</html>
